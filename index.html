@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>贪吃蛇</title>
+    <style>
+      html {
+        min-width: 680px;
+        height: 100%;
+        padding: 0 50px;
+      }
+      body {
+        background: -webkit-linear-gradient(rgb(4, 113, 245), rgb(2, 246, 226));
+        color: #fff;
+      }
+      table {
+        /* 表格的边框合并 */
+        border-collapse: collapse;
+        background-color: transparent;
+      }
+
+      td {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #333;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3 id="f">帧编号: 0</h3>
+    <h3 id="score">分数: 0</h3>
+    <div id="app"></div>
+    <script src="js/Game.js"></script>
+    <script src="js/Snake.js"></script>
+    <script src="js/Food.js"></script>
+    <script>
+      var game = new Game()
+    </script>
+  </body>
+</html>
